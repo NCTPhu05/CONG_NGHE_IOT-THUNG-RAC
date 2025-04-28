@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  fuxa:
+    image: frangoteam/fuxa:latest
+    container_name: fuxa
+    ports:
+      - "1881:1881"
+    volumes:
+      - fuxa_data:/app/server/db
+    restart: unless-stopped
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt
+    ports:
+      - "1883:1883"      # MQTT broker port
+      - "9001:9001"      # WebSocket (optional)
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: unless-stopped
+
+volumes:
+  fuxa_data:

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "0",
+    "name": "FUXA",
+    "enabled": true,
+    "property": {
+      "delay": 10
+    },
+    "type": "FuxaServer",
+    "tags": {
+      "t_42498417-97b045df": {
+        "id": "t_42498417-97b045df",
+        "name": "TrashbinControl Connection Status",
+        "label": "TrashbinControl Connection Status",
+        "type": "number",
+        "memaddress": "d_e9d30d8d-28e44a44",
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "init": "",
+        "sysType": 1
+      }
+    },
+    "polling": 1000
+  },
+  {
+    "id": "d_e9d30d8d-28e44a44",
+    "name": "Thung Rac Thong Minh",
+    "enabled": true,
+    "property": {
+      "address": "mqtt://192.168.69.87:1883",
+      "port": null,
+      "slot": null,
+      "rack": null,
+      "baudrate": 9600,
+      "databits": 8,
+      "stopbits": 1,
+      "parity": "None",
+      "delay": 10,
+      "socketReuse": null
+    },
+    "type": "MQTTclient",
+    "polling": 1000,
+    "tags": {
+      "t_a59de636-83054b12": {
+        "id": "t_a59de636-83054b12",
+        "name": "Mở thùng rác",
+        "type": "raw",
+        "address": "trashbin/control",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_e0dc053e-5a084270": {
+        "id": "t_e0dc053e-5a084270",
+        "name": "Nhiệt Độ",
+        "type": "raw",
+        "address": "trashbin/temperature",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_3c2191f3-44354392": {
+        "id": "t_3c2191f3-44354392",
+        "name": "Độ Ẩm",
+        "type": "raw",
+        "address": "trashbin/humidity",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_3d51e69f-45764d98": {
+        "id": "t_3d51e69f-45764d98",
+        "name": "LED",
+        "type": "raw",
+        "address": "trashbin/led",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_0e3cb495-4af54acb": {
+        "id": "t_0e3cb495-4af54acb",
+        "name": "Đo Khoảng Cách",
+        "type": "raw",
+        "address": "trashbin/distance",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_de40426b-35c24f72": {
+        "id": "t_de40426b-35c24f72",
+        "name": "Buzzer",
+        "type": "raw",
+        "address": "trashbin/buzzer",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_fac652b4-164f4467": {
+        "id": "t_fac652b4-164f4467",
+        "name": "Led 3 Màu",
+        "type": "raw",
+        "address": "trashbin/3led",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_fade5615-7e2c4331": {
+        "id": "t_fade5615-7e2c4331",
+        "name": "Số Lần Hoạt Động",
+        "type": "raw",
+        "address": "trashbin/opencount",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      },
+      "t_836210e0-07114386": {
+        "id": "t_836210e0-07114386",
+        "name": "Servo",
+        "type": "raw",
+        "address": "trashbin/servo",
+        "options": {
+          "pubs": []
+        },
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        }
+      }
+    },
+    "certificatesDir": "/usr/src/app/FUXA/server/_certificates"
+  }
+]
